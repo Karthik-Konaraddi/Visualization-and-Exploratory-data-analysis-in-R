@@ -2,6 +2,8 @@
 
 **1.	Gathered Data from FiveThirtyEight, a data journalism site devoted to politics, sports, science, economics, and culture, on all gun deaths in the United States from 2012-2014.**
 
+
+
 **2.	Generated a data frame that summarizes the number of gun deaths per month and printed the data frame as a formatted kable() table.**
 
    **R Function:** df %>%
@@ -12,11 +14,13 @@
    ![image](https://user-images.githubusercontent.com/15854238/147426590-017845a5-7b39-4c6b-b64e-f0f9699d221d.png)
 
 
+
 **3.	Generated a bar chart with labels on the x-axis. That is, each month labeled as “Jan”, “Feb”, “Mar” etc.**
 
    **R Function:** barplot(deaths,col ="Red",col.axis="Black",main ="Gun Deaths per month",xlab="Months",ylab="Number of Deaths",names.arg =           c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"))
  
    ![image](https://user-images.githubusercontent.com/15854238/147426599-c799db91-b1bb-4b0d-820d-26d61208557f.png)
+
 
 
 **4.	Generated a bar chart that identifies the number of gun deaths associated with each type of intent cause of death. The bars are sorted from highest to lowest values.**
@@ -26,6 +30,7 @@
 
  
    ![image](https://user-images.githubusercontent.com/15854238/147426603-2adcf270-2d62-4d66-b9bf-26828a6b01cd.png)
+
 
 
 **5.	Generated a boxplot visualizing the age of gun death victims, by sex and printed the average age of female gun death victims.**
@@ -41,6 +46,7 @@
    ![image](https://user-images.githubusercontent.com/15854238/147426613-28324b79-442f-4fe7-b51b-1d674b74ee8c.png)
 
  
+ 
 **6.	White males with at least a high school education killed by guns in 2012**
 
    **R Function:** sub_guns3 <- count(sub_guns2) %>%
@@ -48,6 +54,8 @@
    print(sub_guns3)
  
    ![image](https://user-images.githubusercontent.com/15854238/147426624-dbfaac8d-a7e2-43b8-b952-a31ca074a851.png)
+
+
 
 **7.	Season of the year having the most gun deaths**
 
@@ -57,11 +65,15 @@
 
    ![image](https://user-images.githubusercontent.com/15854238/147426634-73a61f28-b964-49b7-bf8c-2752ddce9135.png)
 
+
+
 **8.	Suicide/Homicide Deaths by race**
 
    **R Function:** white_deaths2<-filter (white_deaths, race=="White"|race=="Black"|race=="Hispanic", intent=="Suicide"|intent=="Homicide")
 
    ![image](https://user-images.githubusercontent.com/15854238/147426640-af4638ee-b13a-4db2-92e2-d5ac804edc43.png)
+
+
 
 **9.	Relationship between police involvement and other variables.**
 
@@ -71,6 +83,7 @@
 
   ![image](https://user-images.githubusercontent.com/15854238/147426668-d82ee360-f65f-40b6-9449-351fc6b05ac5.png)
 
+ 
  
 **R Libraries: **
 •	Knitr: to implement piping functions %>%
