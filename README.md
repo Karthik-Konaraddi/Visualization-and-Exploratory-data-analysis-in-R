@@ -1,4 +1,5 @@
-## Visualization-and-Exploring-data-in-R
+## Visualization-and-Exploratory-data-analysis-in-R
+
 
 **1.	Gathered Data from FiveThirtyEight, a data journalism site devoted to politics, sports, science, economics, and culture, on all gun deaths in the United States from 2012-2014.**
 
